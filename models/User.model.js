@@ -7,7 +7,7 @@ const userSchema = new Schema({
 		unique: true,
 		required: true
 	},
-	password: { type: String, required: true }
+	password: { type: String, required: true }  //i am using mongoose as a validator
 });
 
 const User = model('User', userSchema);
